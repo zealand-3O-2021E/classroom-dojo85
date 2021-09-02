@@ -14,7 +14,7 @@ namespace ClassRoom
 
         public ClassRoom()
         {
-            
+            ClassList = new List<Student>();
         }
     }
 }
