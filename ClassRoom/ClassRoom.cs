@@ -8,13 +8,13 @@ namespace ClassRoom
 {
     class ClassRoom
     {
-        public string ClassName { get; set; }
-        public List<Student> ClassList { get; set; }
-        public DateTime SemesterStart { get; set; }
-
         public ClassRoom()
         {
             ClassList = new List<Student>();
         }
+
+        public string ClassName { get; set; }
+        public List<Student> ClassList { get; set; }
+        public DateTime SemesterStart { get; set; }
     }
 }

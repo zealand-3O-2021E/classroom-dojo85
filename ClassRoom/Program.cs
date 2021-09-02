@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,11 +19,23 @@ namespace ClassRoom
                 SemesterStart = new DateTime(2019, 08, 26)
             };
 
-            classRoom.ClassList.Add(new Student("Niko", 12, 21));
-            classRoom.ClassList.Add(new Student("Adriana", 09, 08));
-            classRoom.ClassList.Add(new Student("Nohely", 07, 14));
-            classRoom.ClassList.Add(new Student("Vladimir", 03, 10));
-            classRoom.ClassList.Add(new Student("Nathan", 08, 20));
+            try
+            {
+                classRoom.ClassList.Add(new Student("Niko", 12, 21));
+                classRoom.ClassList.Add(new Student("Adriana", 09, 08));
+                classRoom.ClassList.Add(new Student("Nohely", 07, 14));
+                classRoom.ClassList.Add(new Student("Vladimir", 03, 10));
+                classRoom.ClassList.Add(new Student("Somebody else", 13, 20));
+                classRoom.ClassList.Add(new Student("Nathan", 08, 20));
+                classRoom.ClassList.Add(new Student("Somebody else", 13, 20));
+            }
+            catch (Exception e)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(e.Message + "\nSome of the students were not added to the class list.");
+                Console.WriteLine();
+                Console.ResetColor();
+            }
 
             // Task 4
             Console.WriteLine($"Class name: {classRoom.ClassName}, " +
