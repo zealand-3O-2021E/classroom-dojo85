@@ -7,7 +7,7 @@ using ClassRoom;
 namespace ClassRoomTestProject
 {
     [TestClass]
-    public class ProgramClassTests
+    public class ClassRoomTests
     {
         [DataTestMethod]
         [DataRow(12, "Winter")]
