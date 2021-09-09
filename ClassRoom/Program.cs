@@ -54,44 +54,5 @@ namespace ClassRoom
             Console.ReadKey();
         }
 
-        // Task 6
-        //private static void BirthsPerSeason(List<Student> students)
-        //{
-        //    var result = students.GroupBy(s => Season(s.BirthMonth)).Select(g => new
-        //    {
-        //        Season = g.Key,
-        //        Amount = g.Count()
-        //    });
-
-        //    Console.WriteLine("Birthdays in each season:");
-        //    foreach (var season in result)
-        //    {
-        //        Console.WriteLine($"{season.Season}: {season.Amount} birthdays");
-        //    }
-        //}
-
-        // Task 5
-        //public static string Season(int month)
-        //{
-        //    if (month > 2 && month < 6) return "Spring";
-        //    if (month > 5 && month < 9) return "Summer";
-        //    if (month > 8 && month < 12) return "Autumn";
-        //    return "Winter";
-        //}
-
-        //private static string SeasonNew(int month)
-        //{
-        //    switch (month)
-        //    {
-        //        case >=3:
-        //            return "Spring";
-        //        case >= 6:
-        //            return "Summer";
-        //        case >= 9:
-        //            return "Autumn";
-        //        default:
-        //            return "Winter";
-        //    }
-        //}
     }
 }
