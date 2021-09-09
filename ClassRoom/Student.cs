@@ -17,7 +17,7 @@ namespace ClassRoom
             BirthMonth = birthMonth;
             BirthDay = birthDay;
         }
-
+        
         public string Name { get; private set; }
         public int BirthDay { get; private set; }
 
